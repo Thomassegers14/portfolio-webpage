@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<title>Thomas Segers</title>
+<link rel="icon" type="image/ic" href="/images/favicon.ico">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://d3js.org/d3.v6.js"></script>
+<script defer src="js/main.js"></script>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400;1,700&family=Fira+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/master.css">
+
+<body>
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-bar-block w3-hide-small w3-center nav">
+    <p class="nav__title">Thomas <br>Segers</p>
+    <!-- Avatar image in top left corner -->
+    <a href="#home" class="nav__button">
+      <p>Home</p>
+    </a>
+    <a href="#about" class="nav__button">
+      <p>About</p>
+    </a>
+    <a href="#works" class="nav__button">
+      <p>Works</p>
+    </a>
+    <a href="#contact" class="nav__button">
+      <p>Contact</p>
+    </a>
+  </nav>
+
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-hover-opacity-off w3-center w3-small">
+      <a href="#home" class="nav__button nav__button--mobile" style="width:25% !important">Home</a>
+      <a href="#about" class="nav__button nav__button--mobile" style="width:25% !important">About</a>
+      <a href="#works" class="nav__button nav__button--mobile" style="width:25% !important">Works</a>
+      <a href="#contact" class="nav__button nav__button--mobile" style="width:25% !important">Contact</a>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+    <div class="header" id="home">
+      <div class="header__graph"></div>
+      <div class="header__content">
+        <div class="h-boundingbox">
+            <h1 class="header__title">Thomas Segers</h1>
+            <h2 class="header__subtitle">Data analysist & information designer</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="h-boundingbox">
+
+    <div class="w3-content w3-padding-64 body" id="about">
+      <h2 class="body__title">About me</h2>
+      <p class="body__intro">Since 2018 I have been working as a data journalist for De Tijd, where I helped estabelish data analysis and data visualization as well as visual storytelling in the Belgian media landscape. My expertise is both designing and developing data driven visualizations or tools.</p>
+
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="w3-padding-64 w3-content" id="works">
+
+      <h2 class="body__title">Featured works</h2>
+
+    </div>
+    </div>
+
+      <div class="projects__wrapper">
+        <div class="projects">
+          <h3 class="body__subtitle body__subtitle--works">Data analysis</h3>
+          <div class="works">
+              <div class="works__work">
+                <a href="https://www.tijd.be/dossiers/energieprijzen/duur-gas-doet-belgen-fors-minder-verbruiken/10424471.html">
+                  <h4 class="work__title">Expensive gas reduces consumption <span>(in Dutch)</span></h4>
+                  <p class="work__description">Data journalism</p>
+                </a>
+              </div>
+
+              <div class="works__work">
+                <a href="https://www.tijd.be/ondernemen/sport/de-super-league-op-de-transfermarkt-is-die-er-al/10411165.html">
+                  <h4 class="work__title">Football mercato analysis 2022 <span>(in Dutch)</span></h4>
+                  <p class="work__description">Data journalism</p>
+                </a>
+              </div>
+
+              <div class="works__work">
+                <a href="https://www.tijd.be/ondernemen/algemeen/waterlopen-op-laagste-peil-in-20-jaar/10405769">
+                  <h4 class="work__title">Water levels at lowest point in 20 years <span>(in Dutch)</span></h4>
+                  <p class="work__description">Data journalism</p>
+                </a>
+              </div>
+
+              <div class="works__work">
+                <a href="https://multimedia.tijd.be/betaalbaarheid/">
+                  <h4 class="work__title">How affordable is real estate? <span>(in Dutch)</span></h4>
+                  <p class="work__description">Data journalism</p>
+                </a>
+              </div>
+              <div class="works__work">
+                <a href="https://multimedia.tijd.be/gascrisis/">
+                  <h4 class="work__title">Tracking the European gas crisis <span>(in Dutch)</span></h4>
+                  <p class="work__description">Data journalism</p>
+                </a>
+              </div>
+              <div class="works__work">
+                <a href="https://multimedia.tijd.be/ek2020/">
+                  <h4 class="work__title">Data-analysis for the European Championship 2020 <span>(in Dutch)</span></h4>
+                  <p class="work__description">Sport data science</p>
+                </a>
+              </div>
+          </div>
+        </div>
+        <div class="projects">
+          <h3 class="body__subtitle body__subtitle--works">Data visualization</h3>
+          <div class="works">
+            <div class="works__work">
+              <a href="https://multimedia.tijd.be/stikstofwolk/">
+                <h4 class="work__title">The nitrogen puzzle <span>(in Dutch)</span></h4>
+                <p class="work__description">Visual storytelling</p>
+              </a>
+            </div>
+              <div class="works__work">
+                <a href="https://multimedia.tijd.be/klimaatextremen/">
+                  <h4 class="work__title">Climate change is hardest on the youngest <span>(in Dutch)</span></h4>
+                  <p class="work__description">Visual storytelling</p>
+                </a>
+              </div>
+              <div class="works__work">
+                <a href="https://multimedia.tijd.be/bosbranden/">
+                  <h4 class="work__title">Forest fires in 2019 <span>(in Dutch)</span></h4>
+                  <p class="work__description">Visual storytelling</p>
+                </a>
+              </div>
+              <div class="works__work">
+                <a href="https://thomassegers14.github.io/disneyplus/">
+                  <h4 class="work__title">What's on Disney Plus?</h4>
+                  <p class="work__description">Experimental</p>
+                </a>
+              </div>
+            <div class="works__work">
+              <a href="https://thomassegers14.github.io/trees-antwerp/">
+                <h4 class="work__title">Trees of Antwerp</h4>
+                <p class="work__description">Experimental</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="h-boundingbox">
+
+      <div class="w3-padding-64 w3-content" id="works">
+
+      <h2 class="body__title">skills</h2>
+
+      <h3 class="body__subtitle">Data analysis</h3>
+
+      <p class="skills__title">R</p>
+      <div class="skills__barWrapper">
+        <div class="skills__bar" style="width:75%"></div>
+      </div>
+
+      <p class="skills__title">Microsoft Excel</p>
+      <div class="skills__barWrapper">
+        <div class="skills__bar" style="width:100%"></div>
+      </div>
+
+      <p class="skills__title">QGIS (spatial analysis)</p>
+      <div class="skills__barWrapper">
+        <div class="skills__bar" style="width:60%"></div>
+      </div>
+
+      <p class="skills__title">API knowledge</p>
+      <div class="skills__barWrapper">
+        <div class="skills__bar" style="width:50%"></div>
+      </div>
+
+      <h3 class="body__subtitle">Data visualization</h3>
+
+      <p class="skills__title">R (ggplot2)</p>
+      <div class="skills__barWrapper">
+        <div class="skills__bar" style="width:90%"></div>
+      </div>
+
+      <p class="skills__title">D3.js</p>
+      <div class="skills__barWrapper">
+        <div class="skills__bar" style="width:80%"></div>
+      </div>
+
+      <p class="skills__title">QGIS</p>
+      <div class="skills__barWrapper">
+        <div class="skills__bar" style="width:70%"></div>
+      </div>
+
+      <p class="skills__title">Adobe Indesign</p>
+      <div class="skills__barWrapper">
+        <div class="skills__bar" style="width:80%"></div>
+      </div>
+
+      <p class="skills__title">Adobe Illustrator</p>
+      <div class="skills__barWrapper">
+        <div class="skills__bar" style="width:70%"></div>
+      </div>
+
+      <p class="skills__title">Adobe Photoshop</p>
+      <div class="skills__barWrapper">
+        <div class="skills__bar" style="width:60%"></div>
+      </div>
+
+      <p class="skills__title">Adobe Premiere Pro</p>
+      <div class="skills__barWrapper">
+        <div class="skills__bar" style="width:40%"></div>
+      </div>
+
+      <p class="skills__title">Adobe After Effects</p>
+      <div class="skills__barWrapper">
+        <div class="skills__bar" style="width:40%"></div>
+      </div>
+
+      <h3 class="body__subtitle">Web development</h3>
+
+      <p class="skills__title">HTML</p>
+      <div class="skills__barWrapper">
+        <div class="skills__bar" style="width:70%"></div>
+      </div>
+
+      <p class="skills__title">CSS</p>
+      <div class="skills__barWrapper">
+        <div class="skills__bar" style="width:70%"></div>
+      </div>
+
+      <p class="skills__title">Javascript</p>
+      <div class="skills__barWrapper">
+        <div class="skills__bar" style="width:60%"></div>
+      </div>
+
+      <p class="skills__title">Vue</p>
+      <div class="skills__barWrapper">
+        <div class="skills__bar" style="width:25%"></div>
+      </div>
+
+      <p class="skills__title">React</p>
+      <div class="skills__barWrapper">
+        <div class="skills__bar" style="width:25%"></div>
+      </div>
+
+      <a href="/resume.pdf" download>
+        <button class="button">
+          <i class="fa fa-download"></i> Download Resume
+        </button>
+      </a>
+
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-padding-64 w3-content" id="contact">
+      <h2 class="body__title">Contact Me</h2>
+
+      <div class="contact">
+        <p class="contact__info"><span>Location:</span> Based in Antwerp, Belgium</p>
+
+        <p class="contact__title">Let's get in touch. Send me a message:</p>
+        <p class="contact__info"><span>Phone:</span> <a href="tel:+32495140366">+32 495 14 03 66</a></p>
+        <p class="contact__info"><span>Email:</span> <a href="mailto:segers.thomas@telenet.be">segers.thomas@telenet.be</a></p>
+        <p class="contact__info contact__info--social">
+          <a href="https://twitter.com/ThomasSegers9" target="_blank"><i class="social social__twitter"></i></a>
+          <a href="https://www.linkedin.com/in/thomas-segers-34181210b/" target="_blank"><i class="social social__linkedin"></i></a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+      <!-- End footer -->
+    </footer>
+
+    <!-- END PAGE CONTENT -->
+  </div>
+
+  </div>
+
+</body>
+
+</html>
